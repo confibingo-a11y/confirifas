@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Rifa Oficial - Moto Bera GR250 2026 + iPhone 17 Pro Max</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        neon: {
+                            purple: '#a855f7',
+                            pink: '#ec4899',
+                            cyan: '#06b6d4',
+                            yellow: '#facc15'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Archivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-purple-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-purple-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 to-pink-500 flex items-center justify-center glow-button">
+                    <i class="fa-solid fa-shield-halved text-white text-lg"></i>
+                </div>
+                <span class="text-xl sm:text-2xl font-black tracking-wider bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400 bg-clip-text text-transparent">
+                    GRAN RIFA OFICIAL
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="hidden sm:flex items-center gap-2 text-xs bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 px-3 py-1.5 rounded-full">
+                    <i class="fa-solid fa-lock"></i> Sitio 100% Seguro
+                </div>
+                <a href="#comprar" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold px-5 py-2.5 rounded-xl glow-button text-sm sm:text-base transition-all">
+                    <i class="fa-solid fa-bolt mr-2"></i>¡Comprar Números!
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section con la Moto de Fondo -->
+    <section class="relative overflow-hidden py-24 sm:py-36 hero-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block bg-purple-900/80 border border-purple-500/50 text-purple-200 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-widest mb-6 glow-box backdrop-blur-md">
+                ✨ ¡UN SOLO GANADOR SE LLEVA TODO! ✨
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6 glow-text">
+                ¡Gánate la <span class="bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400 bg-clip-text text-transparent">Moto Bera GR250</span> Y el <span class="bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">iPhone 17 Pro Max</span>!
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-100 max-w-2xl mx-auto mb-8 font-medium drop-shadow-lg">
+                Adquiere tu número por tan solo <strong class="text-yellow-400 font-extrabold text-2xl">1.000 Bs</strong>. ¡Ambos premios se van en el mismo boleto ganador!
+            </p>
+
+            <!-- Banner del Sorteo y Responsable -->
+            <div class="max-w-xl mx-auto bg-slate-900/90 backdrop-blur-md border border-purple-500/40 rounded-2xl p-4 mb-10 glow-box flex items-center justify-center gap-4 shadow-2xl">
+                <div class="w-12 h-12 rounded-xl bg-purple-600/30 flex items-center justify-center text-yellow-400 text-xl font-bold">
+                    <i class="fa-regular fa-calendar-days"></i>
+                </div>
+                <div class="text-left">
+                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Fecha del Sorteo Oficial</p>
+                    <p class="text-white font-bold text-sm sm:text-base">Domingo 8 de Noviembre — <span class="text-pink-400">Lotería Super Gana (7:00 PM)</span></p>
+                    <p class="text-xs text-purple-300 mt-1"><i class="fa-solid fa-user-check mr-1"></i> Responsable: <strong class="text-white">Cristian Cortez</strong></p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#comprar" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-8 py-4 rounded-2xl glow-button text-lg flex items-center gap-3">
+                    <i class="fa-solid fa-ticket"></i> Comprar Números Ahora
+                </a>
+                <a href="#premios" class="bg-slate-900/90 backdrop-blur-md border border-purple-500/40 hover:bg-slate-800 text-purple-300 font-bold px-8 py-4 rounded-2xl text-lg flex items-center gap-3 transition-all">
+                    <i class="fa-solid fa-gift"></i> Ver Combo de Premios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section (AMBOS PREMIOS PARA UN SOLO GANADOR) -->
+    <section id="premios" class="py-16 bg-slate-950 border-b border-purple-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="bg-pink-600/20 border border-pink-500/40 text-pink-300 px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-widest inline-block mb-3">
+                    🔥 COMBO MILLONARIO
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Ambos Premios para el Mismo Ganador
+                </h2>
+                <p class="text-slate-400 text-base sm:text-lg">¡Con un solo boleto te llevas la moto Y el teléfono de paquete!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Premio 1: Moto Bera -->
+                <div class="bg-slate-900 border border-purple-500/30 rounded-3xl p-6 sm:p-8 glow-box flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 sm:h-80 rounded-2xl overflow-hidden mb-6 bg-slate-950 flex items-center justify-center border border-purple-500/20 group cursor-pointer" onclick="abrirModal('gr20.jpeg', 'Moto Bera GR250 (Modelo 2026)')">
+                            <img src="gr20.jpeg" alt="Moto Bera GR250 2026" class="w-full h-full object-contain p-2 transition-transform duration-300 group-hover:scale-105">
+                            <span class="absolute top-4 left-4 bg-pink-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Incluido en el Premio
+                            </span>
+                            <div class="absolute inset-0 bg-purple-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-slate-900/90 text-white text-xs font-bold px-4 py-2 rounded-xl border border-purple-400 flex items-center gap-2">
+                                    <i class="fa-solid fa-expand"></i> Ver Pantalla Completa
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-3 text-purple-300">Moto Bera GR250 (Modelo 2026)</h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                            Moderna, potente y lista para rodar. La compañera perfecta para tus aventuras urbanas y viajes por carretera con diseño exclusivo del año.
+                        </p>
+                    </div>
+                    <div class="bg-slate-950/60 rounded-xl p-4 border border-purple-500/20 flex items-center justify-between">
+                        <span class="text-slate-400 text-sm">Alternativa:</span>
+                        <span class="text-yellow-400 font-bold text-sm sm:text-base">¡Opción de pago en efectivo disponible!</span>
+                    </div>
+                </div>
+
+                <!-- Premio 2: iPhone 17 Pro Max -->
+                <div class="bg-slate-900 border border-purple-500/30 rounded-3xl p-6 sm:p-8 glow-box flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-64 sm:h-80 rounded-2xl overflow-hidden mb-6 bg-slate-950 flex items-center justify-center border border-purple-500/20 group cursor-pointer" onclick="abrirModal('iphone3.jpeg', 'iPhone 17 Pro Max')">
+                            <img src="iphone3.jpeg" alt="iPhone 17 Pro Max" class="w-full h-full object-contain p-2 transition-transform duration-300 group-hover:scale-105">
+                            <span class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Incluido en el Premio
+                            </span>
+                            <div class="absolute inset-0 bg-purple-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <span class="bg-slate-900/90 text-white text-xs font-bold px-4 py-2 rounded-xl border border-purple-400 flex items-center gap-2">
+                                    <i class="fa-solid fa-expand"></i> Ver Pantalla Completa
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-3 text-pink-300">iPhone 17 Pro Max</h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                            El smartphone más avanzado del mercado con cámaras de nivel profesional, pantalla ultra fluida y rendimiento máximo.
+                        </p>
+                    </div>
+                    <div class="bg-slate-950/60 rounded-xl p-4 border border-purple-500/20 flex items-center justify-between">
+                        <span class="text-slate-400 text-sm">Alternativa:</span>
+                        <span class="text-yellow-400 font-bold text-sm sm:text-base">¡Opción de pago en efectivo disponible!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment & Buy Section -->
+    <section id="comprar" class="py-16 sm:py-24 relative bg-slate-900/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="bg-yellow-500/10 border border-yellow-500/40 text-yellow-300 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-widest mb-4 inline-block">
+                    Paso a Paso
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold mb-4 bg-gradient-to-r from-yellow-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
+                    ¿Cómo Comprar tus Números?
+                </h2>
+                <p class="text-slate-300 text-base sm:text-lg">Realiza tu pago móvil y registra tus datos de inmediato de forma segura.</p>
+            </div>
+
+            <!-- Datos de Pago Móvil Card -->
+            <div class="bg-gradient-to-br from-purple-950/60 via-slate-900 to-slate-900 border-2 border-purple-500/40 rounded-3xl p-6 sm:p-10 glow-box mb-12">
+                <div class="flex items-center gap-4 mb-6 pb-6 border-b border-purple-500/20">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-600/30 border border-purple-400 flex items-center justify-center text-purple-300 text-2xl font-bold">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-white">Datos Oficiales para Pago Móvil</h3>
+                        <p class="text-slate-400 text-sm">Precio por número: <strong class="text-yellow-400">1.000 Bs</strong></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-slate-950/60 p-4 rounded-2xl border border-purple-500/20">
+                        <span class="block text-xs uppercase tracking-wider text-slate-400 mb-1">Banco</span>
+                        <span class="text-lg font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-building-columns text-purple-400"></i> 0105 (Mercantil)
+                        </span>
+                    </div>
+                    <div class="bg-slate-950/60 p-4 rounded-2xl border border-purple-500/20">
+                        <span class="block text-xs uppercase tracking-wider text-slate-400 mb-1">Cédula de Identidad</span>
+                        <span class="text-lg font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-id-card text-pink-400"></i> 27.434.216
+                        </span>
+                    </div>
+                    <div class="bg-slate-950/60 p-4 rounded-2xl border border-purple-500/20">
+                        <span class="block text-xs uppercase tracking-wider text-slate-400 mb-1">Teléfono</span>
+                        <span class="text-lg font-bold text-white flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-yellow-400"></i> 0412-5974816
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Formulario Interactivo para Armar el Pedido -->
+                <div class="bg-slate-950/80 p-6 sm:p-8 rounded-2xl border border-purple-500/30">
+                    <h4 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-calculator text-purple-400"></i> Calcula tu pago y genera tu mensaje
+                    </h4>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Cantidad de números a comprar:</label>
+                            <input type="number" id="cantidadNumeros" min="1" value="1" class="w-full bg-slate-900 border border-purple-500/40 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-pink-500 font-bold" oninput="calcularTotal()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Total a pagar en Bolívares:</label>
+                            <div class="w-full bg-slate-900 border border-purple-500/40 rounded-xl px-4 py-3 text-yellow-400 font-black text-xl flex items-center">
+                                <span id="totalPagar">1.000</span> Bs
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Tu Nombre y Apellido:</label>
+                            <input type="text" id="nombreComprador" placeholder="Ej. Juan Pérez" class="w-full bg-slate-900 border border-purple-500/40 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-pink-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Últimos 4 dígitos del Pago Móvil:</label>
+                            <input type="text" id="refPago" maxlength="4" placeholder="Ej. 1234" class="w-full bg-slate-900 border border-purple-500/40 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-pink-500">
+                        </div>
+                    </div>
+
+                    <button onclick="enviarWhatsApp()" class="w-full bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-500 hover:to-green-500 text-white font-bold py-4 px-6 rounded-xl glow-button text-lg flex items-center justify-center gap-3 transition-all">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Enviar Comprobante por WhatsApp
+                    </button>
+                    <p class="text-xs text-slate-400 text-center mt-3">Al hacer clic, se abrirá WhatsApp con tu información lista para enviarla directamente al organizador junto con tu captura de pantalla.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges Section -->
+    <section class="py-16 bg-slate-900/90 border-t border-purple-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-2xl sm:text-4xl font-extrabold text-white mb-3">Garantía, Transparencia y Seguridad</h3>
+                <p class="text-slate-400 text-sm sm:text-base">Tu participación está respaldada por un proceso 100% transparente.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-12">
+                <div class="bg-slate-950/80 border border-purple-500/20 p-6 rounded-2xl flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-shield-check"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">100% Verificable</h3>
+                    <p class="text-slate-400 text-sm">Sorteo oficial transmitido en vivo y respaldado por los resultados de la Lotería Super Gana.</p>
+                </div>
+                <div class="bg-slate-950/80 border border-purple-500/20 p-6 rounded-2xl flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Entrega Garantizada</h3>
+                    <p class="text-slate-400 text-sm">Premios físicos listos para entrega inmediata o su equivalente exacto en efectivo.</p>
+                </div>
+                <div class="bg-slate-950/80 border border-purple-500/20 p-6 rounded-2xl flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-yellow-500/20 text-yellow-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Validación Rápida</h3>
+                    <p class="text-slate-400 text-sm">Envía tu pago móvil y recibe tus números registrados directamente vía WhatsApp de forma segura.</p>
+                </div>
+            </div>
+
+            <!-- Botones Directos de Contacto y Reputación -->
+            <div class="bg-slate-950/90 border border-purple-500/30 rounded-2xl p-6 text-center max-w-3xl mx-auto glow-box">
+                <h4 class="text-xl font-bold text-white mb-2"><i class="fa-solid fa-user-check text-purple-400 mr-2"></i>Organizado por Cristian Cortez</h4>
+                <p class="text-slate-300 text-sm mb-6">Visita mi perfil oficial en Facebook para ver mi reputación de ventas o escríbeme directamente a WhatsApp ante cualquier consulta.</p>
+                
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://www.facebook.com/marketplace/profile/100008211696465/?locale=es_LA" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-xl flex items-center gap-3 transition-all text-sm sm:text-base shadow-lg">
+                        <i class="fa-brands fa-facebook text-xl"></i> Ver Perfil en Facebook
+                    </a>
+                    <a href="https://wa.me/584125974816?text=Hola,%20tengo%20una%20consulta%20sobre%20la%20rifa." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-xl flex items-center gap-3 transition-all text-sm sm:text-base shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Contactar con Cristian Cortez
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer con Frase Motivacional -->
+    <footer class="bg-slate-950 border-t border-purple-500/20 py-10 text-center text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <blockquote class="italic text-base sm:text-lg text-purple-300 font-semibold max-w-2xl mx-auto">
+                "Las grandes oportunidades no suceden por casualidad, ocurren cuando te atreves a dar el primer paso. ¡Cree en tu suerte y ve por lo que mereces!"
+            </blockquote>
+            <div class="pt-2 text-xs text-slate-500">
+                <p class="mb-1">Gran Rifa Oficial — Organizado por <strong>Cristian Cortez</strong></p>
+                <p>Sorteo: Domingo 8 de Noviembre — Lotería Super Gana (7:00 PM) — ¡Mucha suerte a todos los participantes!</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para Pantalla Completa de Imagen -->
+    <div id="imageModal" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md hidden flex flex-col items-center justify-center p-4" onclick="cerrarModal()">
+        <button onclick="cerrarModal()" class="absolute top-6 right-6 text-slate-300 hover:text-white text-3xl font-bold bg-slate-900/80 border border-purple-500/30 rounded-full w-12 h-12 flex items-center justify-center transition-all">
+            &times;
+        </button>
+        <div class="max-w-4xl max-h-[85vh] p-2" onclick="event.stopPropagation()">
+            <img id="modalImg" src="" alt="Premio" class="max-w-full max-h-[75vh] object-contain rounded-2xl border border-purple-500/30 glow-box mx-auto">
+            <p id="modalCaption" class="text-center text-white font-bold text-lg sm:text-xl mt-4 bg-slate-900/80 px-6 py-2 rounded-full border border-purple-500/20 max-w-fit mx-auto"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript Scripts -->
+    <script>
+        function calcularTotal() {
+            const cantidad = document.getElementById('cantidadNumeros').value || 1;
+            const precioUnitario = 1000;
+            const total = cantidad * precioUnitario;
+            document.getElementById('totalPagar').innerText = total.toLocaleString('es-VE');
+        }
+
+        function enviarWhatsApp() {
+            const cantidad = document.getElementById('cantidadNumeros').value || '1';
+            const total = document.getElementById('totalPagar').innerText;
+            const nombre = document.getElementById('nombreComprador').value.trim();
+            const ref = document.getElementById('refPago').value.trim();
+
+            if (!nombre) {
+                alert('Por favor ingresa tu nombre y apellido.');
+                document.getElementById('nombreComprador').focus();
+                return;
+            }
+
+            if (!ref || ref.length < 4) {
+                alert('Por favor ingresa los últimos 4 dígitos de la referencia de tu pago móvil.');
+                document.getElementById('refPago').focus();
+                return;
+            }
+
+            const numeroTelefono = '584125974816';
+            const mensaje = `¡Hola! 👋 Participo en la rifa de la Moto Bera GR250 + iPhone 17 Pro Max (Sorteo 8 de Noviembre).\n\n👤 *Nombre:* ${nombre}\n🎟️ *Cantidad de números:* ${cantidad}\n💰 *Monto pagado:* ${total} Bs\n🔢 *Ref. (últimos 4 dígitos):* ${ref}\n\nAdjunto mi comprobante de pago por aquí. 📸`;
+
+            const url = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+
+        function abrirModal(src, caption) {
+            document.getElementById('modalImg').src = src;
+            document.getElementById('modalCaption').innerText = caption;
+            document.getElementById('imageModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function cerrarModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                cerrarModal();
+            }
+        });
+    </script>
+</body>
+</html>

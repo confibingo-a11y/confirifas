@@ -1,0 +1,29 @@
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Fondo de la sección Hero enfocado en la Moto Bera GR250 */
+.hero-bg {
+    background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0.82), rgba(2, 6, 23, 0.94)), url('gr20.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.glow-text {
+    text-shadow: 0 0 15px rgba(168, 85, 247, 0.6), 0 0 30px rgba(236, 72, 153, 0.4);
+}
+
+.glow-box {
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.25), inset 0 0 15px rgba(236, 72, 153, 0.15);
+}
+
+.glow-button {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+    transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.8);
+    transform: translateY(-2px);
+}
