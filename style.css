@@ -1,29 +1,66 @@
+/* ================================================================= *
+ * GANA CON BENDICIÓN - ESTILOS OFICIALES (style.css)                *
+ * ================================================================= */
+
+:root {
+    --brand-gold: #D4AF37;
+    --brand-dark: #0f172a;
+    --brand-blue: #1e3a8a;
+    --brand-accent: #f59e0b;
+}
+
+/* Estilos generales y fondo base */
 body {
-    font-family: 'Outfit', sans-serif;
+    background-color: #020617;
+    color: #f8fafc;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Fondo de la sección Hero enfocado en la Moto Bera GR250 */
-.hero-bg {
-    background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0.82), rgba(2, 6, 23, 0.94)), url('gr20.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Animación de la barra superior (Ticker de compras en vivo) */
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
 
-.glow-text {
-    text-shadow: 0 0 15px rgba(168, 85, 247, 0.6), 0 0 30px rgba(236, 72, 153, 0.4);
+.animate-marquee {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
 }
 
-.glow-box {
-    box-shadow: 0 0 25px rgba(168, 85, 247, 0.25), inset 0 0 15px rgba(236, 72, 153, 0.15);
+/* Efectos de cristal y bordes personalizados */
+.glass-card {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.glow-button {
-    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
-    transition: all 0.3s ease;
+/* Transiciones suaves para botones y campos */
+button, input, a {
+    transition: all 0.2s ease-in-out;
 }
 
-.glow-button:hover {
-    box-shadow: 0 0 30px rgba(236, 72, 153, 0.8);
-    transform: translateY(-2px);
+/* Estilización de barras de desplazamiento en paneles */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #090d16;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
 }
